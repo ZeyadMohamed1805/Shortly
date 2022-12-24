@@ -1,0 +1,26 @@
+#boost {
+    background-image: url(./bg-boost-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: center;
+}
+
+#boost #boost-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#boost #boost-container h1 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+#boost #boost-container a {
+    padding: 0.25rem 1rem;
+}

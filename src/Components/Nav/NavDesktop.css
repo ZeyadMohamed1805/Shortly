@@ -1,0 +1,62 @@
+#nav {
+    position: relative;
+}
+
+#main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav #main-nav-container {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-nav #main-nav-container #main-nav-left {
+    display: flex;
+    align-items: center;
+}
+
+#main-nav #main-nav-container #main-nav-left h1 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+#main-nav #main-nav-container #main-nav-left #main-nav-left-links {
+    display: flex;
+    align-items: center;
+}
+
+#main-nav #main-nav-container #main-nav-left #main-nav-left-links a {
+    color: var(--greyish-violet);
+    margin-left: 1.5rem;
+}
+
+#main-nav #main-nav-container #main-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#main-nav #main-nav-container #main-nav-right a:first-child {
+    color: var(--greyish-violet);
+    margin-right: 1.5rem;
+}
+
+#main-nav #main-nav-container #main-nav-right a:last-child {
+    padding: 0.25rem 1rem;
+}
+
+#main-nav #main-nav-container i {
+    color: var(--greyish-violet);
+    font-size: 1.5rem;
+    display: none;
+}
+
+#main-nav #main-nav-container #main-nav-left #main-nav-left-links a:hover,
+#main-nav #main-nav-container #main-nav-right a:first-child:hover {
+    color: var(--dark-blue);
+}

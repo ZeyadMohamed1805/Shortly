@@ -1,0 +1,38 @@
+.card {
+    background-color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#middle-card {
+    top: 2rem;
+}
+
+#last-card {
+    top: 4rem;
+}
+
+.card h3 {
+    margin: 2rem 0 0.5rem 0;
+}
+
+.card .card-image {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--violet);
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -2rem;
+}
+
+.card .card-image img {
+    height: 2rem;
+}

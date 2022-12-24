@@ -1,0 +1,25 @@
+.footer-categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-categories h4 {
+    color: var(--grey);
+    margin-bottom: 0.5rem;
+}
+
+.footer-categories .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-categories .footer-links a {
+    width: fit-content;
+    color: var(--greyish-violet);
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.footer-categories .footer-links a:hover {
+    color: var(--cyan);
+}

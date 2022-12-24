@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+    #link {
+        top: 5rem;
+    }
+
+    #link #link-container {
+        grid-template-columns: minmax(100px, 100%);
+        grid-template-rows: repeat(2, 2.5rem);
+    }
+}

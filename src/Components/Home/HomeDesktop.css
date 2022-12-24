@@ -1,0 +1,40 @@
+#home {
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#home #home-container {
+    display: flex;
+    align-items: center;
+}
+
+#home #home-container #home-left,
+#home #home-container #home-right {
+    width: 50%;
+}
+
+#home #home-container #home-left h1 {
+    color: var(--dark-blue);
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+#home #home-container #home-left p {
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+#home #home-container #home-left a {
+    padding: 0.5rem 1rem;
+}
+
+#home #home-container #home-right {
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#home #home-container #home-right img {
+    max-width: 100%;
+}
