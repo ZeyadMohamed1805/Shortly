@@ -1,30 +1,58 @@
 import React from 'react';
 import "./LinkDesktop.css";
 import "./LinkMobile.css";
+import { URL } from '../URL/URL';
+import { useState } from 'react';
 
 export const Link = () => {
-  const validity = (e) => {
+  const [errorDisplay, setErrorDisplay] = useState("none");
+  const [URLDisplay, setURLDisplay] = useState("none");
+  const [error, setError] = useState(null);
+  const [value, setValue] = useState("https://www.twitter.com");
+  const [url, setURL] = useState("");
+  const [gradient, setGradient] = useState("linear-gradient(#fff 50%, aliceblue 50%)");
+
+  const submit = (e) => {
     e.preventDefault();
 
     const input = document.querySelector("input");
-    const value = input.value;
+    const thisValue = input.value;
 
-    if (value.includes("www.")) {
-      if (value.includes(".com") || value.includes(".net") || value.includes(".gov")) {
-        input.style.border = `none`;
+    setValue(thisValue);
+
+      if (thisValue.includes("https://www.")) {
+        if (thisValue.includes(".com") || thisValue.includes(".net") || thisValue.includes(".gov") || thisValue.includes(".io")) {
+          input.style.border = `none`;
+          setErrorDisplay("none");
+
+          let link = `https://api.shrtco.de/v2/shorten?url=${thisValue}`;
+
+          fetch(link)
+          .then(response => response.json())
+          .then(data => {setURL(`${data.result.short_link}`)});
+
+          setTimeout(() => {setURLDisplay("flex"); setGradient("linear-gradient(#fff 25%, aliceblue 25%)");}, 500);
+        } else {
+          input.style.border = `solid var(--red)`;
+          setErrorDisplay("block");
+          setError("Invalid URL (Check the URL's ending (.com, .net, etc.))");
+        }
       } else {
-        input.style.border = `solid red`;
+        input.style.border = `solid var(--red)`;
+        setErrorDisplay("block");
+        setError("Invalid URL (Make sure you enter the protocol (https://www.))");
       }
-    } else {
-      input.style.border = `solid red`;
-    }
   }
   
   return (
-    <section id="link">
+    <section id="link" style={{backgroundImage: `${gradient}`}}>
         <div id="link-container" className="similar-containers">
+          <div id="link-shortner">
             <input type="text" placeholder="Shorten a link here..." />
-            <a href="#" className="event-links" onClick={validity}>Shorten It!</a>
+            <a id="shorten" href="#" className="event-links" onClick={submit}>Shorten It!</a>
+            <p style={{display: `${errorDisplay}`}}>{error}</p>
+          </div>
+          <URL url={url} value={value} show={URLDisplay} />
         </div>
     </section>
   )

@@ -2,11 +2,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 3.25rem;
 }
 
 #link #link-container {
+    min-height: 1rem;
+    position: relative;
+}
+
+#link #link-container #link-shortner {
     background-image: url(./bg-boost-desktop.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +28,11 @@
     border: none;
     padding: 1rem;
     border-radius: 5px;
+}
+
+#link #link-container p {
+    color: var(--red);
+    font-style: italic;
 }
 
 #link #link-container a {

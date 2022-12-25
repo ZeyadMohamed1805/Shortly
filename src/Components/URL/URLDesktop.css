@@ -1,0 +1,26 @@
+#url {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.25rem 1rem;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#url p {
+    color: #333 !important;
+}
+
+#url #copy {
+    display: flex;
+    align-items: center;
+}
+
+#url #copy #new-link {
+    margin-right: 0.5rem;
+    color: var(--cyan);
+}
+
+#url #copy #copy-link {
+    padding: 0.25rem 1rem;
+}

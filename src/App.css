@@ -43,7 +43,7 @@
   }
   
   .event-links {
-    background-color: var(--cyan) !important;
+    background-color: var(--cyan);
     color: #fff !important;
     border-radius: 50px;
   }

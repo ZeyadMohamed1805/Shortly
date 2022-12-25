@@ -1,6 +1,7 @@
 #home {
     min-height: 75vh;
     width: 100%;
+    padding-bottom: 5rem;
     display: flex;
     justify-content: center;
 }
