@@ -36,3 +36,10 @@
 .card .card-image img {
     height: 2rem;
 }
+
+@media (max-width: 1000px) {
+    #stats #stats-container #stats-cards .card {
+        align-items: center;
+        text-align: center;
+    }
+}

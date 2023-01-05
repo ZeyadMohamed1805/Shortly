@@ -1,0 +1,51 @@
+#link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#link #link-container {
+  min-height: 1rem;
+  position: relative;
+}
+
+#link #link-container #link-shortner {
+  background-image: url(./bg-boost-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--violet);
+  border-radius: 5px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 6fr 8rem;
+  grid-template-rows: 2.5rem;
+  grid-gap: 1rem;
+}
+
+#link #link-container input {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#link #link-container p {
+  color: var(--red);
+  font-style: italic;
+}
+
+#link #link-container a {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  #link #link-container #link-shortner {
+    grid-template-columns: minmax(100px, 100%);
+    grid-template-rows: repeat(2, 2.5rem);
+  }
+}/*# sourceMappingURL=Link.css.map */

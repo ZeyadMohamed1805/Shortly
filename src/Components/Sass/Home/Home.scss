@@ -39,3 +39,24 @@
 #home #home-container #home-right img {
     max-width: 100%;
 }
+
+@media (max-width: 1000px) {
+    #home #home-container {
+        flex-direction: column-reverse;
+    }
+
+    #home #home-container #home-left,
+    #home #home-container #home-right {
+        width: 100%;
+    }
+
+    #home #home-container #home-left {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #home #home-container #home-left h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}

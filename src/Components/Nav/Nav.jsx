@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import "./NavDesktop.css";
-import "./NavMobile.css";
+import "../Sass/Nav/Nav.css";
 
 export const Nav = () => {
   const [style, setStyle] = useState("none");

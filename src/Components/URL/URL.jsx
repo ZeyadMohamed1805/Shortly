@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import "./URLDesktop.css";
-import "./URLMobile.css";
+import "../Sass/URL/URL.css";
 
 export const URL = (props) => { 
   const [copy, setCopy] = useState("Copy");

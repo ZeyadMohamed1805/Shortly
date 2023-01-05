@@ -1,6 +1,5 @@
 import React from 'react';
-import "./CategoryDesktop.css";
-import "./CategoryMobile.css";
+import "../Sass/Category/Category.css";
 
 export const Category = (props) => {
   return (

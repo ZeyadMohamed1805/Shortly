@@ -1,7 +1,6 @@
 import React from 'react';
-import "./StatsDesktop.css";
-import "./StatsMobile.css";
 import { Card } from '../Card/Card';
+import "../Sass/Stats/Stats.css";
 
 export const Stats = () => {
   return (

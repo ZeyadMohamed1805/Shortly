@@ -1,6 +1,5 @@
 import React from 'react';
-import "./HomeDesktop.css";
-import "./HomeMobile.css";
+import "../Sass/Home/Home.css";
 
 export const Home = () => {
   return (

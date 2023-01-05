@@ -1,8 +1,7 @@
 import React from 'react';
-import "./LinkDesktop.css";
-import "./LinkMobile.css";
 import { URL } from '../URL/URL';
 import { useState } from 'react';
+import "../Sass/Link/Link.css";
 
 export const Link = () => {
   const [errorDisplay, setErrorDisplay] = useState("none");

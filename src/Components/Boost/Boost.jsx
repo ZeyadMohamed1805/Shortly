@@ -1,5 +1,5 @@
 import React from 'react';
-import "./BoostDesktop.css";
+import "../Sass/Boost/Boost.css";
 
 export const Boost = () => {
   return (

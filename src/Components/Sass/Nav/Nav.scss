@@ -60,3 +60,52 @@
 #main-nav #main-nav-container #main-nav-right a:first-child:hover {
     color: var(--dark-blue);
 }
+
+@media (max-width: 1000px) {
+    #main-nav #main-nav-container #main-nav-left #main-nav-left-links,
+    #main-nav #main-nav-container #main-nav-right {
+        display: none;
+    }
+
+    #main-nav #main-nav-container #menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #side-nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+    }
+
+    #side-nav #side-nav-container {
+        background-color: var(--violet);
+        border-radius: 10px;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #side-nav #side-nav-container #side-nav-top,
+    #side-nav #side-nav-container #side-nav-bottom {
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #side-nav #side-nav-container #side-nav-top {
+        border-bottom: solid 1px var(--greyish-violet);
+    }
+
+    #side-nav #side-nav-container a {
+        width: 100%;
+        color: var(--grey);
+        margin: 0.25rem 0;
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+}

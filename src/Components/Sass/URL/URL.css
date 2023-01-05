@@ -1,0 +1,51 @@
+#url {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.25rem 1rem;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#url p {
+  color: #333 !important;
+}
+
+#url #copy {
+  display: flex;
+  align-items: center;
+}
+
+#url #copy #new-link {
+  margin-right: 0.5rem;
+  color: var(--cyan);
+}
+
+#url #copy #copy-link {
+  padding: 0.25rem 1rem;
+}
+
+@media (max-width: 1000px) {
+  #url {
+    width: 100%;
+    flex-direction: column;
+  }
+  #url p {
+    width: 100%;
+    border-bottom: solid 1px silver;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  #url #copy {
+    width: 100%;
+    flex-direction: column;
+  }
+  #url #copy #copy-link {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  #url p {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=URL.css.map */

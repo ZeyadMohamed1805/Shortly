@@ -1,7 +1,6 @@
 import React from 'react';
 import { Category } from '../Category/Category';
-import "./FooterDesktop.css";
-import "./FooterMobile.css";
+import "../Sass/Footer/Footer.css";
 
 export const Footer = () => {
   return (

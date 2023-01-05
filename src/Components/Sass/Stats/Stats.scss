@@ -74,3 +74,22 @@
 #stats #stats-container #stats-cards .card .card-image img {
     height: 2rem;
 }
+
+@media (max-width: 1000px) {
+    #stats #stats-container #stats-cards {
+        grid-template-columns: minmax(250px, 375px);
+        justify-content: center;
+    }
+
+    #stats #stats-container #stats-cards #joiner {
+        top: 0;
+        left: calc(50% - 0.15rem);
+        width: 0.5rem;
+        height: 100%;
+    }
+
+    #stats #stats-container #stats-cards .card {
+        align-items: center;
+        text-align: center;
+    }
+}

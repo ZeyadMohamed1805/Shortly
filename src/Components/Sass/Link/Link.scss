@@ -42,3 +42,11 @@
     align-items: center;
     border-radius: 5px;
 }
+
+@media (max-width: 1000px) {
+
+    #link #link-container #link-shortner {
+        grid-template-columns: minmax(100px, 100%);
+        grid-template-rows: repeat(2, 2.5rem);
+    }
+}
